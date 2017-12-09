@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from TOKEN import *
 
 import sys
-sys.path.append('../../custom_function')
+sys.path.append('../custom_function')
 from top_ranked_word import *
 
 # Enable logging
