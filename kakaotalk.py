@@ -2,6 +2,7 @@
 import os
 from flask import Flask, request, jsonify
 from TOKEN import *
+import logging
 
 import sys
 sys.path.append('../custom_function')
