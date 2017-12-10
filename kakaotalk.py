@@ -30,8 +30,10 @@ def Keyboard():
 def Message():
     dataReceive = request.get_json()
     content = dataReceive['content']
+    user = dataReceive['user']
 
     if content == u"실검":
+        logger.info("%s wants the rank" % user)
         for portal_site in ['Daum', 'Naver']:
             real_rank_item = get_rank_string(portal_site)
 
