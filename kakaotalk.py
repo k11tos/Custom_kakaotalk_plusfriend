@@ -30,7 +30,7 @@ def Keyboard():
 def Message():
     dataReceive = request.get_json()
     content = dataReceive['content']
-    user = dataReceive['user']
+    user = dataReceive['user_key']
 
     if content == u"실검":
         logger.info("%s wants the rank" % user)
